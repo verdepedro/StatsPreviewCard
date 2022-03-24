@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+/*Background for the body*/
+body {
+    background-color:hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: #090B1A;
+}
+
+/*Style for the container*/
+.mainContainer {
+    background-color: hsl(244, 38%, 16%);
+    width: 1105px;
+    height: 445px;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 20vh;
+}
+
+/*Style for the text container*/
+.textContainer {
+    flex-direction: column;
+}
+
+/*Style for the title*/
+.title {
+    color: white;
+    margin-top: 74px;
+    margin-left: 70px;
+    line-height: 1.343;
+    font-size: 36px;
+    width: 380px;
+}
+
+.title span {
+    color: hsl(277, 64%, 61%);
+}
+
+/*Style for the description and the container*/
+
+.descriptionContainer {
+    width: 420px;
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14.5px;
+    line-height: 200%;
+    margin-top: 10px;
+    margin-left: 70px;
+    line-height: 2;
+}
+
+/*Style for the stats*/
+.stats {
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.stats p {
+    font-size: 12px;
+    position: relative;
+    top: -13.5px;
+    letter-spacing: 1.5px;
+}
+
+#companies {
+    margin-right: 30px;
+}
+
+#templates {
+    margin-right: 30px;
+}
+
+.stats h2 {
+    color: white;
+}
+
+/*Style for the image*/
+.image {
+    position: relative;
+    border-radius: 0px 8px 8px 0px;
+    left: 115px;
+}
+
+.overlay {
+    position:relative;
+    top: -450px;
+    left: 115px;
+    width: 100%;
+    height: 446px;
+    float:right;
+    background-color: rgba(128, 24, 190, 0.6);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Style for the footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Style for mobile devices*/
+
+@media only screen and (max-width: 1110px) {
+    
+    /*Style for the mobile container*/
+    .mainContainer {
+        width: 375px;
+        height: 920px;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    /*Style for the image container*/
+    .imageContainer {
+        position: relative;
+        top: -430px;
+        left: -115px;
+    }
+    
+    .image {
+        border-radius: 8px 8px 0px 0px;
+        width: 375px;
+        top: -205px;
+    }
+
+    .overlay {
+        position: relative;
+        border-radius: 8px 8px 0px 0px;
+        top : -520px;
+        width: 375px;
+        height: 311px;
+    }
+
+    /*Style for the text container*/
+    .textContainer {
+        position: relative;
+        top: 280px;
+    }
+
+    .title {
+        position: relative;
+        font-size: 29px;
+        top: 10px;
+        left: -30px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .description {
+        position: relative;
+        font-size: 14px;
+        top: 10px;
+        left: -10px;
+        width: 250px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .stats {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: -10px;
+        letter-spacing: 1.5px;
+    }
+
+    #companies {
+        position: relative;
+        left: -20px;
+    }
+
+    #templates {
+        position: relative;
+        left: -20px;
+    }
+
+    #queries {
+        position: relative;
+        left: -30px;
+    }
+}
