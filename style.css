@@ -118,6 +118,10 @@ body {
 /*Style for mobile devices*/
 
 @media only screen and (max-width: 1110px) {
+
+    .body {
+        place-items: center;
+    }
     
     /*Style for the mobile container*/
     .mainContainer {
